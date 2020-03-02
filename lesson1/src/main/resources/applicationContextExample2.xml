@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="exampleBean1" class="org.springforqa.example2.bean.ExampleBean">
+        <constructor-arg value="Hello Constructor"/>
+    </bean>
+
+    <bean id="exampleBean2" class="org.springforqa.example2.bean.ExampleBean">
+        <property name="message" value="Hello Property"/>
+    </bean>
+
+    <bean id="exampleBean3" class="org.springforqa.example2.bean.ExampleBean">
+        <property name="message" value="Hello Property"/>
+    </bean>
+
+</beans>
