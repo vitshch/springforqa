@@ -11,6 +11,10 @@ public class ExampleBean {
         this.message = message;
     }
 
+    private static ExampleBean create() {
+        return new ExampleBean("Hello from Factory Method");
+    }
+
     public void print() {
         System.out.println(message);
     }
