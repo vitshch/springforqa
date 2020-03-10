@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="taskData" class="org.springforqa.task1.bean.TaskData">
+        <constructor-arg>
+            <list>
+                <value>Cook meals</value>
+                <value>Do English homework</value>
+                <value>Pay taxes</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="taskService" class="org.springforqa.task1.bean.TaskService" init-method="initBean">
+        <constructor-arg ref="taskData"/>
+    </bean>
+
+</beans>
