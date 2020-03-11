@@ -14,5 +14,6 @@ public class Example1 {
                 new ClassPathXmlApplicationContext("applicationContextExample1.xml");
         Hello helloBean = context.getBean("hello", Hello.class);
         helloBean.print();
+        context.registerShutdownHook();
     }
 }
